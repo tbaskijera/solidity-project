@@ -32,7 +32,7 @@ contract Token {
         return balanceOf[_owner];
     }
 
-    function transfer(address _to, uint256 _value) public payable {
+    function transfer(address _to, uint256 _value) public {
         require(balanceOf[msg.sender] >= _value, "Insufficient balance!");
         require(_value > 0, "Transfer value can not be 0!");
 
