@@ -28,6 +28,10 @@ contract Token {
         balanceOf[msg.sender] = _totalSupply;
     }
 
+    function checkTotalSupply() public view returns (uint256) {
+        return totalSupply;
+    }
+
     function checkBalance(address _owner) public view returns (uint256) {
         return balanceOf[_owner];
     }
