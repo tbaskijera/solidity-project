@@ -11,8 +11,8 @@ contract Token {
     mapping(address => uint256) public balanceOf;
 
     event Transfer(address indexed from, address indexed to, uint256 value);
-    event Burn(address indexed burner, uint256 value);
     event Mint(address indexed minter, uint256 value);
+    event Burn(address indexed burner, uint256 value);
 
     constructor(
         string memory _name,
